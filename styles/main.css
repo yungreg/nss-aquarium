@@ -1,0 +1,71 @@
+.header-section {
+    border: 3px double black;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: aqua;
+}
+
+.header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    width: 70%;
+}
+
+.main-content {
+    width: 90%;
+    display: flex;
+}
+
+/* *SOLVED (KEPT THIS FOR DESIGN): use a temporary border to see how elements are moving on screen */
+.section-header-fish-owned,
+.section-header-care-tips,
+.locations-blurbs-title {
+    text-align: center;
+}
+
+.fish-owned {
+    
+    border: 3px double black;
+    margin: auto;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua
+    /* float: left; */
+}
+
+
+.fish-image {
+    width: 60%
+}
+/* *SOLVED: figure out how to get this aside in the correct place on the serve */
+.aside {
+    float: right;
+    max-width: 35%;
+    border: 3px double black;
+    background-color: aqua;
+}
+
+.Fish-Card-1,
+.Fish-Card-2,
+.Fish-Card-3,
+.Fish-Card-4 {
+    display: flex;
+    border: 3px double black;
+    padding: 5px;
+    margin: 5px;
+    background-color: blanchedalmond;
+}
+/* *SOLVED: finish the aside section's formatting. almost done */
+
+.p-care-box,
+.list-locations-blurbs {
+   
+    border: 3px double black;
+    /* padding: 5px; */
+    margin: 5px;
+    background-color: blanchedalmond;
+}

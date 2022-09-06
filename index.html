@@ -1,0 +1,135 @@
+<!-- BUilding Martin's site algo: 
+1. build DOM tree skeleton first (where do components all go?)
+2. sketch what should be in each component with text/pseudocode
+3. give componenets classes/ids for CSS 
+4. fill in actual content for each part
+5. style CSS
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- *added stylesheet link to CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Martin's Aquarium!</title>
+  </head>
+
+  <body>
+    <!-- //TODO: activate the line below when you're ready to attach the scripts --> 
+    <!-- <script type="module" src="./scripts/main.js"></script> -->
+    
+    <header class="header-section">
+    <!--  (big part of the screen, H1 size, maybe include an img of "Martin") -->
+        <h1 class="header-text">Welcome Martin (luther)'s Fish-nasium!</h1>
+        <h2 class="header-tagline">(Martin's Tagline)</h2>
+        <!-- *done: make this image responsive through css -->
+        <img class="header-img" src="https://www-images.christianitytoday.com/images/67500.jpg?h=393&w=700" alt="Christian Pholosopher Martin Luther, who lived from 1483 through 1546 " >
+    </header>
+    
+    <article class="main-content">
+        <div class="fish-owned"> <!-- (aka daddy div (container) to all the sections-- maybe the aside too..?)--> 
+           <!-- *done: fill-in the contents of teh Fish squares from your database. might not need 9. -->
+           <!-- todo: resize these boxes so that they're responsive, and make space for teh right floated aside. -->
+            <h3 class="section-header-fish-owned"> Martin's Fish:</h3>
+            <section class="Fish-Card-1"> 
+                <img class="fish-image" src="https://i.etsystatic.com/8079306/r/il/a3e657/3412438968/il_1140xN.3412438968_bx0b.jpg" alt="8 bit image of The Wind Fish">
+                <ul class="list-fish-details">
+                    <li>Name: The Wind Fish</li>
+                    <li>Species: Imaginary Beluga Whale</li>
+                    <li>Length: 5 meters</li>
+                    <li>Diet: Plankton, Dreams</li>
+                    <li>Location Harvested: Koholint Island</li>
+                </ul>
+            </section>
+            <section class="Fish-Card-2">
+            <img class="fish-image" src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2020/08/diver-with-oarfish.jpg" alt="An image of an Oarfish swimming happily">
+                <ul>
+                    <li>Name: Boaty McBoatface</li>
+                    <li>Species: Oarfish</li>
+                    <li>Length: 8 meters</li>
+                    <li>Diet: Plankton</li>
+                    <li>Location Harvested: Queensland, Australia</li>
+                </ul class="list-fish-details">
+            </section>
+            <section class="Fish-Card-3">
+                <img class="fish-image" src="https://cdn.mos.cms.futurecdn.net/BgZFhT7piMqXpyzfWrdKyP-970-80.jpg.webp" alt="image of a Blue Tang swimming stoicly">
+                <ul>
+                    <li>Name: Tang-A-lang</li>
+                    <li>Species: Blue Tang</li>
+                    <li>Length: 0.5 meters</li>
+                    <li>Diet: Algae, Plankton</li>
+                    <li>Location Harvested: Queensland, Australia</li>
+                </ul>
+            </section>
+            <section class="Fish-Card-4">
+                <img class="fish-image" src="https://a-z-animals.com/media/2022/01/Types-of-rare-fish-Bluefin-Tuna-1024x535.jpg" alt="Image of a Bluefin Tuna swimming HUGELY">
+                <ul class="list-fish-details">
+                    <li>Name: Lawng Boi</li>
+                    <li>Species: Bluefin Tuna</li>
+                    <li>Length: 4 meters</li>
+                    <li>Diet: Algae & Plankton</li>
+                    <li>Location Harvested: Canary Islands, Spain</li>
+                </ul>
+            </section>
+            
+        </div>
+       
+        <!-- *done: make sure this is floated right in CSS -->
+        <!-- *done: fill in the contents in these sections & center them in their sections-->
+        <aside class="aside"> 
+            <section class="Section-aquarium-care-tips">
+                <h3 class="section-header-care-tips">Aquarium General Care and Tips:</h3>
+                <!-- *done: make each paragraph have a header smaller than the section header -->
+                <div class="p-care-box">
+                    <p class="p-care-tips">
+                        <h4> Tip #1 : Clean the tank every 2 weeks</h4>
+                        <blockquote class="p-care-quotes">"include further information here"</blockquote>
+                    </p>
+                    <p class="p-care-tips">
+                        <h4> Tip #2 : Have a big enough tank to give everyone the space they need </h4>
+                        <blockquote class="p-care-quotes">"include further information here"</blockquote>
+                    </p>
+                    <p class="p-care-tips">
+                        <h4> Tip #2 :</h4>
+                        <blockquote class="p-care-quotes">"include further information here"</blockquote>
+                    </p>
+                </div>
+            </section> <!-- (container for the aside sections)  -->
+            
+            <section class="section-locations-blurbs">
+                <h3 class="locations-blurbs-title">Mike's travel Tips:</h3>
+                <ul class="list-locations-blurbs">
+
+               <!-- *solved <blockquote> works: figure out quotes here.  -->
+                    <li class="travel-tips-list-item">
+                        <h4>Travel tip for: Koholint Island</h4>
+                        <blockquote class="list-locations-quote">
+                            "sample text! replace me with the real thing!"
+                        </blockquote>
+                    </li>
+                    <li class="travel-tips-list-item">
+                        <h4>Travel tip for: Queensland, Australia</h4>
+                        <blockquote class="list-locations-quote">
+                            "sample text! replace me with the real thing!"
+                        </blockquote>
+                    </li>
+                    <li class="travel-tips-list-item">
+                        <h4>Travel tip for: Canary Islands, Spain</h4>
+                        <blockquote class="list-locations-quote">
+                            "sample text! replace me with the real thing!"
+                        </blockquote>
+                    </li>
+                    <!-- <li class="list-item-4">
+                        <h4>Travel tip for:</h4>
+                    </li> -->
+                </ul>
+            </section>
+        </aside>
+    </article>
+  </body>
+</html>
+
+
