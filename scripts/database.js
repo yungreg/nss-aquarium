@@ -1,4 +1,4 @@
-//*sample object below:
+
 
 const martinsFishDatabase =  {
     fish : [
@@ -9,7 +9,7 @@ const martinsFishDatabase =  {
             species: "Imaginary Beluga Whale",
             length: 5,
             diet: "plankton",
-            harvestLocation: 'Koholint Island'
+            location: 'Koholint Island'
         },
         {
             id: 2,
@@ -18,7 +18,7 @@ const martinsFishDatabase =  {
             species:'Oarfish',
             length: 8,
             diet:'plankton',
-            harvestLocation:'Queensland, Australia',
+            location:'Queensland, Australia',
         },
         {
             id: 3,
@@ -27,7 +27,7 @@ const martinsFishDatabase =  {
             species: "Blue Tang",
             length: 0.5,
             diet:['algae','plankton',],
-            harvestLocation:'Queensland, Australia',
+            location:'Queensland, Australia',
         },
         {
             id: 4,
@@ -36,13 +36,13 @@ const martinsFishDatabase =  {
             species: "Bluefin Tuna",
             length: 4,
             diet:['algae','plankton',],
-            harvestLocation:'Canary Islands, Spain',
+            location:'Canary Islands, Spain',
         }
     ]
 }
 
 export const getFish = () => {
-    return database.fish.map(fish => ({...fish}))
+    return martinsFishDatabase.fish.map(fish => ({...fish}))
 }
 
 // console.log(getFish)
